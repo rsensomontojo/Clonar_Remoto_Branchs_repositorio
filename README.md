@@ -1,7 +1,7 @@
 
-# Practica - Repositorio de Práctica
+# Clonar / Remoto / Branchs para trabajar con un repositorio
 
-Este repositorio contiene el código fuente del proyecto. A continuación, se detallan las instrucciones para clonar, descargar y colaborar en el repositorio, así como cómo manejar conflictos al fusionar cambios.
+Instruciones para clonar,trabajar desde remoto, descargar, ramas (branch) y colaborar en el repositorio, así como cómo manejar conflictos al fusionar cambios.
 
 ---
 
