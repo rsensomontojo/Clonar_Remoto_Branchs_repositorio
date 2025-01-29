@@ -5,7 +5,7 @@ Instruciones para clonar,trabajar desde remoto, descargar, ramas (branch) y cola
 
 ---
 
-## Clonar el Repositorio con Git 🐑
+# 🐑 Clonar el Repositorio con Git 
 
 Para trabajar con el historial completo del repositorio y poder contribuir al proyecto, sigue estos pasos:
 
@@ -167,7 +167,7 @@ Puedes usar GitHub Desktop para una experiencia más amigable.
 
 ---
 
-## Trabajar con Ramas (Branches) 🌿
+# 🌿 Trabajar con Ramas (Branches) 
 
 Git permite trabajar en ramas para desarrollar nuevas funcionalidades sin afectar el código principal. A continuación se explica cómo trabajar con ramas.
 
@@ -236,7 +236,7 @@ git push origin main
 
 ---
 
-## Trabajar con Git en Visual Studio Code
+# 💻 Trabajar con Git en Visual Studio Code
 
 Visual Studio Code es un editor muy popular que tiene integración directa con Git. Aquí te explico cómo trabajar con Git en VS Code:
 
@@ -270,36 +270,3 @@ Si quieres entender mejor cómo manejar los conflictos de merge, puedes revisar 
 [Conflictos Merge - Mi otro repositorio](https://github.com/rsensomontojo/Conflictos_merge)
 
 ---
-# 🐑 Proyecto Ovejero 🐑
-
-¡Bienvenido al **Proyecto Ovejero**! 🌿 Este es un proyecto de ejemplo que utiliza emojis de ramas, ovejas y negaciones para hacer tu `README.md` más divertido y visual.
-
-## 🚫 Negaciones
-
-- 🚫 No te preocupes si no entiendes algo al principio.
-- 🚫 No dudes en preguntar si tienes alguna duda.
-- 🚫 No olvides revisar la documentación.
-
-## 🌿 Ramas
-
-Este proyecto tiene varias ramas:
-
-- 🌿 `main`: La rama principal del proyecto.
-- 🌿 `develop`: La rama de desarrollo donde se integran las nuevas características.
-- 🌿 `feature/nueva-funcionalidad`: Una rama de características para desarrollar nuevas funcionalidades.
-
-## 🐑 Ovejas
-
-¡Las ovejas son importantes en este proyecto! 🐑
-
-- 🐑 **Oveja líder**: La oveja que guía al rebaño.
-- 🐑 **Oveja desarrolladora**: Las ovejas que trabajan en el código.
-- 🐑 **Oveja tester**: Las ovejas que prueban el código para asegurarse de que todo funcione correctamente.
-
-## 🛠️ Instalación
-
-Para instalar este proyecto, sigue estos pasos:
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/proyecto-ovejero.git
