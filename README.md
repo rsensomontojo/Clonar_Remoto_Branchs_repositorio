@@ -1,7 +1,7 @@
 
 # Clonar / Remoto / Branchs para trabajar con un repositorio
 
-Instruciones para clonar,trabajar desde remoto, descargar, ramas (branch) y colaborar en el repositorio, así como cómo manejar conflictos al fusionar cambios.
+Instrucciones para clonar,trabajar desde remoto, descargar, ramas (branch) y colaborar en el repositorio, así como cómo manejar conflictos al fusionar cambios.
 
 ---
 
