@@ -7,7 +7,7 @@ Instrucciones para clonar,trabajar desde remoto, descargar, ramas (branch) y col
 
 # 🐑 Clonar el Repositorio con Git 
 
-Para trabajar con el historial completo del repositorio y poder contribuir al proyecto, sigue estos pasos:
+Sigue estos pasos:
 
 ### 1. Clona el repositorio:
 Ejecuta el siguiente comando en tu terminal para clonar el repositorio:
@@ -85,7 +85,7 @@ rm Practica.zip
 
 ## Estructura del Repositorio
 
-Una vez que hayas clonado o descargado el repositorio, encontrarás la siguiente estructura de carpetas y archivos:
+Una vez que hayas clonado o descargado el repositorio, encontrarás algo similar a esta estructura de carpetas y archivos:
 Este es mi ejemplo:
 
 ```
@@ -100,7 +100,7 @@ Practica/
 
 # 🌍 Trabajar en Remoto sin Clonar
 
-Esta guía explica cómo trabajar con repositorios Git de forma remota sin necesidad de clonar todo el historial, tanto desde la terminal como desde Visual Studio Code.
+De forma remota sin necesidad de clonar todo, tanto desde la terminal como desde Visual Studio Code.
 
 ## Opciones desde Terminal
 
@@ -133,7 +133,7 @@ unzip repositorio.zip -d ./carpeta-destino
 1. Instala la extensión "GitHub Repositories"
 2. Usa `Ctrl + Shift + P` (o `Cmd + Shift + P` en macOS)
 3. Busca "GitHub: Open Remote Repository"
-4. Ingresa la URL del repositorio
+4. Pon la URL del repositorio
 
 ### 2. GitHub Codespaces
 
@@ -161,15 +161,11 @@ git clone https://github.com/tu-usuario/repositorio-forkeado.git
 git fetch origin nombre-de-la-rama
 git checkout nombre-de-la-rama
 ```
-
-### Interfaz Gráfica
-Puedes usar GitHub Desktop para una experiencia más amigable.
-
 ---
 
 # 🌿 Trabajar con Ramas (Branches) 
 
-Git permite trabajar en ramas para desarrollar nuevas funcionalidades sin afectar el código principal. A continuación se explica cómo trabajar con ramas.
+Git permite trabajar en ramas para desarrollar tu codigo sin afectar el código principal.
 
 ### 1. Crear una nueva rama:
 Para crear una nueva rama y moverte a ella, usa el siguiente comando:
@@ -205,9 +201,14 @@ git branch
 ```
 
 Esto mostrará una lista de ramas, con un asterisco (*) junto a la rama en la que estás actualmente.
+En el caso de saber que tu proyecto tiene más ramas y no te aparecen, usa:
+
+```bash
+git checkout <nombre-de-la-rama>
+```
 
 ### 4. Fusionar ramas (Merge):
-Cuando termines de trabajar en una rama y quieras integrar tus cambios en la rama principal (generalmente `main` o `master`), realiza un merge de la rama en la que estás trabajando a la rama principal.
+Cuando termines de trabajar en una rama y quieras integrar tus cambios en la rama principal (generalmente `main` o `master` son las que combinan más código conjunto, normalmente los merge no dan problemas por que cada uno debería de tener tareas separadas), realiza un merge de la rama en la que estás trabajando a la rama principal.
 
 1. Primero, cambia a la rama `main`:
 
@@ -236,38 +237,60 @@ git push origin main
 
 ![Ramas](Flujo.png)
 
+## 📌 Ejemplo de flujo de trabajo
+
+1. Un desarrollador (Raúl o Alicia) crea su rama a partir de `dev`.
+2. Trabaja en su parte y cuando la termina, hace un *merge* en `dev`.
+3. Se prueba la integración en `dev`.
+4. Cuando `dev` está correcto, se fusiona en `release/...` para preparar una nueva versión.
+5. Finalmente, `release/...` se fusiona con `Main` y se cierra la versión.
+
+
 ---
 
 # 💻 Trabajar con Git en Visual Studio Code
 
-Visual Studio Code es un editor muy popular que tiene integración directa con Git. Aquí te explico cómo trabajar con Git en VS Code:
 
 ### 1. Abrir el Proyecto:
-Abre Visual Studio Code y selecciona **Abrir carpeta**. Luego selecciona la carpeta del repositorio clonado.
+Abre Visual Studio Code y selecciona **Abrir carpeta**. Luego selecciona la carpeta del repositorio clonado y actualiza
+
+```bash
+git pull origin main
+```
 
 ### 2. Verificar el Estado de los Archivos:
-En el panel lateral izquierdo de VS Code, verás un icono de fuente de control (un icono de ramita 🌿). Haz clic en él para ver el estado de los archivos (si están modificados, agregados, etc.).
+En el panel lateral izquierdo de VS Code, verás el estado de los archivos (si están modificados, agregados, etc. normalmente con colores rojo, verde y amarillo).
 
 ### 3. Hacer Commit:
-- Después de realizar cambios en los archivos, verás esos archivos en la sección de cambios.
-- Puedes seleccionar los archivos que deseas añadir al commit (o hacer clic en el símbolo de **+** junto al archivo para añadirlos).
-- Luego, escribe un mensaje de commit en la caja superior y presiona el icono de **✔** para hacer commit.
+- Después de realizar cambios en los archivos.
+- Abre un nuevo terminal.
+- Escribe:
+  
+```bash
+git add .
+git commite -m "Breve explicacion del cambio"
+git push rama/origin
+```
 
 ### 4. Crear una Nueva Rama:
-Para crear una nueva rama en VS Code, haz clic en la parte inferior izquierda donde aparece el nombre de la rama actual. Se abrirá un menú donde podrás elegir **Crear nueva rama**.
+Abrir el terminal:
+
+```bash
+git checkout -b nombre_rama
+```
 
 ### 5. Cambiar de Rama:
-De igual manera, puedes cambiar entre ramas haciendo clic en el nombre de la rama en la parte inferior izquierda y seleccionando la rama a la que deseas cambiar.
+Abrir el terminal:
 
-### 6. Hacer Pull y Push:
-- Para **hacer pull** (obtener cambios del repositorio remoto), puedes usar el comando **Sincronizar cambios** (icono de nube con una flecha) en la parte inferior izquierda de la ventana.
-- Para **hacer push** (subir tus cambios), VS Code lo hará automáticamente cuando hagas commit. Si no lo hace, puedes hacer clic en el icono de sincronización.
+```bash
+git checkout nombre_rama
+```
 
 ---
 
 ## Consejos para Evitar Conflictos
 
-Si quieres entender mejor cómo manejar los conflictos de merge, puedes revisar el siguiente repositorio como referencia:
+Si quieres ver como evitar los conflictos de merge, puedes ver el siguiente repositorio:
 
 [Conflictos Merge - Mi otro repositorio](https://github.com/rsensomontojo/Conflictos_merge)
 
