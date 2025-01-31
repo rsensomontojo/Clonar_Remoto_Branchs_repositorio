@@ -234,6 +234,8 @@ Una vez que hayas trabajado y realizado el merge de tus cambios en tu rama local
 git push origin main
 ```
 
+![Ramas](Flujo.png)
+
 ---
 
 # 💻 Trabajar con Git en Visual Studio Code
